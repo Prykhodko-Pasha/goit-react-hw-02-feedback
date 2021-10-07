@@ -10,8 +10,6 @@ export default class Feedback extends React.Component {
     bad: 0,
   };
 
-  static propTypes = {};
-
   onLeaveFeedback = option => {
     this.setState(prevState => ({ [option]: prevState[option] + 1 }));
   };
